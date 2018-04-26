@@ -1,5 +1,4 @@
 class EventsController < ApplicationController
-  class RestaurantsController < ApplicationController
     def index         # GET /restaurants
     end
 
