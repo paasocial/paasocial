@@ -8,7 +8,8 @@ class UsersController < ApplicationController
   def new           # GET /restaurants/new
   end
 
-  def create        # POST /restaurants
+  def create
+    @user = User.new user_params        # POST /restaurants
   end
 
   def edit          # GET /restaurants/:id/edit
@@ -17,6 +18,6 @@ class UsersController < ApplicationController
   def update        # PATCH /restaurants/:id
   end
 
-  def destroy       # DELETE /restaurants/:id
+  def destroy      # DELETE /restaurants/:id
   end
 end

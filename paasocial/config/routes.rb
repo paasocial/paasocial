@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  #devise_for :users
-  get 'events/new'
+  devise_for :users
+  resources :events
 
-  get 'events/edit'
+  resources :users
 
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

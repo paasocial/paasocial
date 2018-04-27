@@ -5,7 +5,8 @@ class EventsController < ApplicationController
     def show          # GET /restaurants/:id
     end
 
-    def new           # GET /restaurants/new
+    def new
+      @events = EVENTS          # GET /restaurants/new
     end
 
     def create        # POST /restaurants
