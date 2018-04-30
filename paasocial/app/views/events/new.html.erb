@@ -1,7 +1,8 @@
 <%= simple_form_for @event do |f| %>
   <%= f.input :title, label: 'The name of your event', error: 'Title is mandatory, please specify one' %>
-  <%= f.input :description, hint: 'No special characters.' %>
-  <%= f.input :datetime, placeholder: '27/04/18 6pm' %>
+  <%= f.input :date, hint: 'No special characters.' %>
+  <%= f.input :time, placeholder: '27/04/18 6pm' %>
   <%= f.input :location, placeholder: 'London' %>
+  <%= f.input :link, placeholder: 'event.com' %>
   <%= f.button :submit %>
 <% end %>
