@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  
-  def home
+  def home         # GET /restaurants
+    @events = Event.all
   end
 end

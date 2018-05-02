@@ -1,12 +1,14 @@
 class EventsController < ApplicationController
     def index         # GET /restaurants
+      @events = Event.all
     end
 
     def show          # GET /restaurants/:id
+      @events = Event.find(params[:id])
     end
 
     def new
-      @event = Event.new  
+      @events = Event.new
     end
 
     def create        # POST /restaurants
