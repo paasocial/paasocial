@@ -12,7 +12,8 @@ class UsersController < ApplicationController
     @user = User.new user_params        # POST /restaurants
   end
 
-  def edit          # GET /restaurants/:id/edit
+  def edit
+    @user = User.find(params[:id])        # GET /restaurants/:id/edit
   end
 
   def update        # PATCH /restaurants/:id

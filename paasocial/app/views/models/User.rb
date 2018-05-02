@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
   def user_params
     params.require(:email, :password, :password_confirmation)
   end
+
 end

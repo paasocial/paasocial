@@ -1,8 +1,22 @@
-<%= simple_form_for @event do |f| %>
-  <%= f.input :title, label: 'The name of your event', error: 'Title is mandatory, please specify one' %>
-  <%= f.input :date, hint: 'No special characters.' %>
-  <%= f.input :time, placeholder: '27/04/18 6pm' %>
-  <%= f.input :location, placeholder: 'London' %>
-  <%= f.input :link, placeholder: 'event.com' %>
-  <%= f.button :submit %>
-<% end %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create an event</title>
+    <h1>Create an event</h1>
+  </head>
+  <body>
+    <div class="form">
+      <%= simple_form_for @event do |f| %>
+      <div class="title">
+        <%= f.input :title, label: 'The name of your event:          ', error: 'Title is mandatory, please specify one' %>
+      </div>
+        <%= f.input :date, hint: 'No special characters.' %>
+        <%= f.input :time, placeholder: '27/04/18 6pm' %>
+        <%= f.input :location, placeholder: 'London' %>
+        <%= f.input :link, placeholder: 'event.com' %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+  </body>
+</html>
