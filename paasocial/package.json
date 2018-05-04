@@ -2,7 +2,8 @@
   "name": "paasocial",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.3.0"
+    "@rails/webpacker": "^3.3.0",
+    "moment": "^2.22.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.1.1"

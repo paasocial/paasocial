@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <meta charset="utf-8">
     <title>Create an event</title>
@@ -11,11 +12,18 @@
       <div class="title">
         <%= f.input :title, label: 'The name of your event:          ', error: 'Title is mandatory, please specify one' %>
       </div>
+        <input type="text" id="DTB">
         <%= f.input :date, hint: 'No special characters.' %>
         <%= f.input :time, placeholder: '27/04/18 6pm' %>
+      <div class="location">
         <%= f.input :location, placeholder: 'London' %>
+      </div>
+      <div class="link">
         <%= f.input :link, placeholder: 'event.com' %>
+      </div>
+      <div class="submit">
         <%= f.button :submit %>
+      </div>
       <% end %>
     </div>
   </body>

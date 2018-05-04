@@ -13,7 +13,8 @@
     <% @events.each do |event| %>
       <li class="cards__item">
         <div class="card">
-            <div class="card__image card__image--fence1"></div>
+            <div class="card__image card__image--fence3">
+            </div>
             <div class="card__content">
               <div class="card__title">
                 <%= event.title %>
@@ -21,7 +22,17 @@
               <p class="card__text">
                 <%= event.location %>
               </p>
-              <button class="btn btn--block card__btn">I am going!</button>
+              <p class="card__text">
+                <% dateString = event.date %>
+                <%= dateString.strftime("%B %-d, %Y") %>
+              </p>
+              <p class="card__text">
+                <%= timeString = event.time %>
+                <% timeString.strftime("%H:%M:%S") %>
+              </p>
+              <button class="btn">
+                I am going!
+              </button>
             </div>
         </div>
       </li>
