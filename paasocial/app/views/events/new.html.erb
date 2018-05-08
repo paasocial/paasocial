@@ -12,9 +12,12 @@
       <div class="title">
         <%= f.input :title, label: 'The name of your event:          ', error: 'Title is mandatory, please specify one' %>
       </div>
+      <div class="datetime">
         <input type="text" id="DTB">
         <%= f.input :date, hint: 'No special characters.' %>
         <%= f.input :time, placeholder: '27/04/18 6pm' %>
+        </input>
+      </div>
       <div class="location">
         <%= f.input :location, placeholder: 'London' %>
       </div>
